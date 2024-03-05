@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    --success-color : #79C8C7;
+    --contact-color : #012F34;
+    --talent-color : #F67E7E; 
+    --weight : 600;
+    --para : 15px;
+    --backGround-color : #014E56; 
+    background-color: var(--backGround-color);
+    color: white;
+    font-family: "Livvic", sans-serif;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    margin-top: 48px;
+    justify-content: space-between;
+}
+header{
+    background-color: var(--backGround-color);
+    padding: 0px 24px 108px 24px;
+}
+.logo {
+    width: 128px;
+    height: 32px;
+}
+.hamburger{
+    height: 17px;
+    margin-left: 162px;
+    margin-top: 7px;
+}
+.header__nav__div{
+    background-color: #2C6269;
+    position: fixed; top: 0; right: 0;
+    height: 100vh;
+    width: 255px;
+    transform: translateX(100%);
+    transition: 0.4s transform ease-in-out;
+}
+.header__nav__div.open{
+    transform: initial;
+}
+.header__nav__svg{
+    position: absolute;
+    top: 56px;
+    right: 25px;
+}
+ul {
+    list-style: none;
+}
+.header__nav__ul__home{
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    position: absolute;
+    top: 112px;
+    left: 46px;
+    font-size: 18px;
+    font-weight: var(--weight);
+}
+.header__nav__ul__about{
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    position: absolute;
+    top: 164px;
+    left: 46px;
+    font-size: 18px;
+    font-weight: var(--weight);
+}
+.header__nav__ul__button__contact{
+    background-color: #2C6269;
+    border: #fff 2px solid;
+    border-radius: 25px 25px;
+    position: absolute; top: 237px; left: 48px; 
+    padding: 9px 33px 11px 34px;
+}
+.header__nav__ul__contact{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: var(--weight);
+}
+.header__nav__opacity{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+.header__nav__opacity.open{
+    display: block;
+}
+.about{
+    text-align: center;
+    padding-top: 80px;
+    font-size: 40px;
+}
+.team {
+    margin: 66px 0px 24px 145px;
+    height: 24px;
+    width: 95px;
+}
+.ul__icon{
+    display: flex;
+    gap: 32px;
+    margin-left: 134px;
+    color: #fff;
+}
+ .hill{
+    font-size: var(--para);
+    font-weight: var(--weight);
+    text-align: center;
+    opacity: 60%;
+    color: #fff;
+ }
+ .call{
+    font-size: var(--para);
+    font-weight: var(--weight);
+    padding-left: 105px;
+    margin-bottom: 40px;
+    color: white;
+    opacity: 60%;
+ }
+ .copy{
+    color: white;
+    text-align: center;
+    margin-top: 16px;
+    font-size: var(--para);
+    font-weight: var(--weight);
+    opacity: 60%;
+ }
+ footer{
+    height: 432px;
+    background-color: #002529;
+ }
+ .icon-facebook{
+    margin: 40px 0 0px 158px;
+    height: 24px;
+    width: 24px;    
+ }
+ .icon-pinterest{
+    margin-left: 16px;
+    height: 24px;
+    width: 24px;
+ }
+ .icon-twitter{
+    margin-left: 16px;
+    height: 24px;
+    width: 24px;
+ }
+ address{
+    padding-left: 25px;
+    padding-top: 5px;
+ }
+ a {
+    text-decoration-line: none;
+    font-size: 18px;
+    color: var(--contact-color);
+    font-weight: var(--weight);
+    font-family: 'Livvic', sans-serif;
+}
+.ask{
+    color: var(--talent-color);
+    font-weight: 700;
+    font-size: 32px;
+    padding: 16px 0px 40px 87px;
+}
+.header__div{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    line-height: 28px;   
+    gap: 24px;
+    padding-bottom: 24px;
+    text-align: start;
+    font-weight: 700;
+    font-size: 18px;
+}
+.cog{
+    height: 72px;
+    width: 72px;
+}
